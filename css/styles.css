@@ -1,50 +1,6 @@
-:root {
-    --address: #757575;
-    --background-color: #2F303A;
-    --background-text-color: white;
-    --button-active-color: #2196F3;
-    --button-active-text-color: white;
-    --button-color: #F5F4FA;
-    --button-text-color: black;
-    --container-width: 1200px;
-    --footer-address-contact: #FFFFFF99;
-    --footer-address-size: 14px;
-    --footer-address: #FFF;
-    --footer-logo: white;
-    --h2-font-size: 36px;
-    --header-container-border-color: #ECECEC;
-    --header-height: 600px;
-    --header-link-font-size: 14px;
-    --header-link-font-weight: 500;
-    --header-link-line-height: 1.17;
-    --link-active-color: #2196F3;
-    --link-color: black;
-    --logo-start-color: #2196F3;
-    --our-team-container-color: #F5F4FA;
-    --our-team-element-background: white;
-    --picture-title-font-size: 16px;
-    --picture-title-font-weight: 500;
-    --picture-title-line-height: 1.17;
-    --picture-work-font-size: 16px;
-    --picture-work-font-weight: 400;
-    --picture-work-line-height: 1.17;
-    --portfolio-navigation-font-size: 16px;
-    --portfolio-navigation-font-weight: 500;
-    --portfolio-navigation-line-height: 1.25;
-    --portfolio-picture-border-color: #EEE;
-    --portfolio-picture-title-font-size: 18px;
-    --portfolio-picture-title-font-weight: 700;
-    --portfolio-picture-title-line-height: 2;
-    --text-color: #212121;
-    --logo-link-font-size: 26px;
-    --lorem-ipsum-article-color: #757575;
-    --lorem-ipsum-article-font-size: 14px;
-    --button-border-radius: 4px;
-}
-
 body {
     font-family: "RobotoRegular 400", "RobotoMedium 500", "RobotoBold 700", "RobotoBlack 900", sans-serif;
-    color: var(--text-color);
+    color: #212121;
 }
 
 ul {
@@ -54,11 +10,11 @@ ul {
 
 h2 {
     text-align: center;
-    font-size: var(--h2-font-size);
+    font-size: 36px;
 }
 
 .container {
-    width: var(--container-width);
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -71,7 +27,7 @@ h2 {
 }
 
 .header {
-    border-bottom: 1px solid var(--header-container-border-color);
+    border-bottom: 1px solid #ECECEC;
     height: 80px;
 }
 
@@ -79,7 +35,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%
+    height: 100%;
 }
 
 .flexbox-header {
@@ -90,7 +46,7 @@ h2 {
 }
 
 .portfolio__list-element {
-    border: 1px solid var(--portfolio-picture-border-color);
+    border: 1px solid #EEE;
     margin-bottom: 30px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -149,7 +105,7 @@ h2 {
 }
 
 .our-team {
-    background-color: var(--our-team-container-color);
+    background-color: #F5F4FA;
 }
 
 .our-team__image {
@@ -157,7 +113,7 @@ h2 {
 }
 
 .our-team__element {
-    background-color: var(--our-team-element-background);
+    background-color: white;
     text-align: center;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0 0 4px 4px;
@@ -167,17 +123,17 @@ h2 {
     font-family: "Raleway", sans-serif;
     text-decoration: none;
     color: black;
-    font-size: var(--logo-link-font-size);
+    font-size: 26px;
     margin-right: 93px;
 }
 
 .header__logo-start {
-    color: var(--logo-start-color);
+    color: #2196F3;
 }
 
 .button {
-    background-color: var(--button-color);
-    color: var(--button-text-color);
+    background-color: #F5F4FA;
+    color: black;
     cursor: pointer;
     font-size: 16px;
     transition-duration: 250ms;
@@ -186,24 +142,24 @@ h2 {
 }
 
 .page-title__order-buton {
-    background-color: var(--button-active-color);
-    color: var(--button-active-text-color);
+    background-color: #2196F3;
+    color: white;
     cursor: pointer;
     font-size: 16px;
     padding: 10px 41px 10px 42px;
-    border-radius: var(--button-border-radius);
+    border-radius: 4px;
 }
 
 .button:hover, .button:focus {
-    background-color: var(--button-active-color);
-    color: var(--button-active-text-color);
+    background-color: #2196F3;
+    color: white;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color, background-color;
 }
 
 .header__link {
-    color: var(--link-color);
+    color: black;
     text-decoration: none;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -211,17 +167,17 @@ h2 {
 }
 
 .header__link:hover, .header__link:focus {
-    color: var(--link-active-color);
-    fill: var(--link-active-color);
+    color: #2196F3;
+    fill: #2196F3;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color, fill;
 }
 
 .header__navigation-element {
-    font-size: var(--header-link-font-size);
-    font-weight: var(--header-link-font-weight);
-    line-height: var(--header-link-line-height);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.17;
     display: inline;
     margin-right: 46px;
     position: relative;
@@ -232,19 +188,19 @@ h2 {
 }
 
 .portfolio__name {
-    font-size: var(--portfolio-picture-title-font-size);
-    font-weight: var(--portfolio-picture-title-font-weight);
-    line-height: var(--portfolio-picture-title-line-height);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
 }
 
 .portfolio__navigation-button {
-    font-size: var(--portfolio-navigation-font-size);
-    font-weight: var(--portfolio-navigation-font-weight);
-    line-height: var(--portfolio-navigation-line-height);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
     border: 0 solid transparent;
     padding: 6px 22px;
     margin: 0 3px;
-    border-radius: var(--button-border-radius);
+    border-radius: 4px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: box-shadow;
@@ -258,40 +214,40 @@ h2 {
 }
 
 .our-team__person-name {
-    font-size: var(--picture-title-font-size);
-    font-weight: var(--picture-title-font-weight);
-    line-height: var(--picture-title-line-height);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.17;
     margin-bottom: 10px;
 }
 
 .our-team__person-function {
-    font-size: var(--picture-work-font-size);
-    font-weight: var(--picture-work-font-weight);
-    line-height: var(--picture-work-line-height);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.17;
     margin-bottom: 16px;
     color: #757575;
 }
 
 .background {
-    background-color: var(--background-color);
-    color: var(--background-text-color);
+    background-color: #2F303A;
+    color: white;
 }
 
 .header__link--address {
-    color: var(--address);
+    color: #757575;
 }
 
 .footer__logo {
-    color: var(--footer-logo);
+    color: white;
 }
 
 .footer__address {
-    font-size: var(--footer-address-size);
-    color: var(--footer-address);
+    font-size: 14px;
+    color: #FFF;
 }
 
 .footer-address-contact > a.header__link {
-    color: var(--footer-address-contact);
+    color: #FFFFFF99;
 }
 
 .portfolio__navigation-box {
@@ -315,8 +271,8 @@ h2 {
 }
 
 .lorem-ipsum-element > .pre {
-    color: var(--lorem-ipsum-article-color);
-    font-size: var(--lorem-ipsum-article-font-size);
+    color: #757575;
+    font-size: 14px;
 }
 
 .auto-margin {
@@ -441,7 +397,7 @@ h2 {
 }
 
 .page-title {
-    height: var(--header-height);
+    height: 600px;
     max-width: 1600px;
     background-image: url("./../images/Img Overlay.png"), url("./../images/tełko.jpg");
     margin: 0 auto;
@@ -528,7 +484,6 @@ h2 {
     width: 528px;
     min-height: 581px;
     background-color: white;
-
 }
 
 .close-btn {
@@ -557,7 +512,7 @@ h2 {
     display: block;
     text-align: center;
     margin-bottom: 12px;
-    margin-top:40px ;
+    margin-top: 40px;
 }
 
 .contact-form__data {
@@ -649,30 +604,28 @@ h2 {
     margin-left: 15px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-
 }
 
-.contact-form__privacy{
+.contact-form__privacy {
     font-size: 14px;
     color: #757575;
 }
 
 .contact-form__privacy-link {
-    color:rgba(33, 150, 243, 1);
+    color: rgba(33, 150, 243, 1);
 }
 
-.contact-form__button{
+.contact-form__button {
     width: 200px;
     height: 50px;
     background: #2196F3;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-   color:rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
     border-color: transparent;
-
 }
 
-.contact-form__button-box{
+.contact-form__button-box {
     text-align: center;
     margin-top: 30px;
 }

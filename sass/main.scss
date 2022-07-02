@@ -1,5 +1,2 @@
 @import "utils/variables";
-
-.background {
-  background-color: getColor('dark-background');
-}
+@import "components/basic";
