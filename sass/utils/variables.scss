@@ -1,0 +1,7 @@
+$colors: (
+    'dark-section': #2F303A,
+);
+
+@function getColor($name) {
+  @return map-get($colors, $name);
+}
