@@ -13,19 +13,14 @@ h2 {
   font-size: 36px;
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.header {
-  border-bottom: 1px solid #ECECEC;
-  height: 80px;
-}
-
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
   align-items: baseline;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
