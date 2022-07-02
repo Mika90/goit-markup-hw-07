@@ -3,18 +3,18 @@
   max-width: 1600px;
   background-image: url("./../images/Img Overlay.png"), url("./../images/tełko.jpg");
   margin: 0 auto;
-}
 
-.page-title__order-buton {
-  background-color: #2196F3;
-  color: white;
-  cursor: pointer;
-  font-size: 16px;
-  padding: 10px 41px 10px 42px;
-  border-radius: 4px;
-}
+  &__order-buton {
+    background-color: #2196F3;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 41px 10px 42px;
+    border-radius: 4px;
+  }
 
-.page-title__title {
-  text-align: center;
-  font-size: 44px;
+  &__title {
+    text-align: center;
+    font-size: 44px;
+  }
 }
