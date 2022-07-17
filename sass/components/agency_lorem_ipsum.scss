@@ -1,20 +1,31 @@
 .lorem-ipsum {
+  @extend %container;
+  @extend %section-padding-top;
+
+  &__list {
+    @extend %flexbox-spaces;
+  }
+
+  &__element {
+    @extend %inline-block;
+  }
+
   &__icon {
-    width: 70px;
-    height: 70px;
+    $icon-size: 70px;
+    width: $icon-size;
+    height: $icon-size;
   }
 
   &__element .pre {
-    color: #757575;
-    font-size: 14px;
+    font-size: $font-smaller;
+    color: $color-light-text;
   }
 
   &__image-box {
-    display: flex;
-    justify-content: center;
+    @extend %flexbox-center;
+    @extend %round-corner;
     align-items: center;
     height: 120px;
-    background-color: #F5F4FA;
-    border-radius: 4px;
+    background-color: $color-light-background;
   }
 }

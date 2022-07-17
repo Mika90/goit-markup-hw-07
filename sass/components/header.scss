@@ -1,67 +1,66 @@
 .header {
-  border-bottom: 1px solid #ECECEC;
   height: 80px;
+  border-bottom: getBorder(#ECECEC);
 
   &__container {
-    display: flex;
-    justify-content: space-between;
+    @extend %container;
+    @extend %flexbox-spaces;
     align-items: center;
     height: 100%;
   }
 
   &__logo {
     font-family: "Raleway", sans-serif;
-    text-decoration: none;
-    color: black;
     font-size: 26px;
     margin-right: 93px;
+    text-decoration: none;
+    color: black;
   }
 
   &__logo-start {
-    color: #2196F3;
+    color: $color-active;
   }
 
   &__link {
-    color: black;
-    text-decoration: none;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %animated;
     transition-property: color, fill;
+    text-decoration: none;
+    color: black;
 
     &:hover, &:focus {
-      color: #2196F3;
-      fill: #2196F3;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      @extend %animated;
       transition-property: color, fill;
+      color: $color-active;
+      fill: $color-active;
     }
   }
 
   &__navigation-element {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.17;
+    font-size: $font-smaller;
+    font-weight: $font-weight-bigger;
+    line-height: $line-height-big;
+    position: relative;
     display: inline;
     margin-right: 46px;
-    position: relative;
   }
 
   &__link--address {
-    color: #757575;
+    @extend .header__navigation-element;
+    color: $color-light-text;
   }
 }
 
-.header__navigation-element.header__link--phone {
+.header__link.header__link--phone {
   margin-right: 0;
 }
 
 .here:after {
-  content: "";
-  background-color: #2196F3;
-  border-radius: 2px;
+  position: absolute;
+  bottom: -28px;
+  left: 0;
   width: 100%;
   height: 4px;
-  position: absolute;
-  left: 0;
-  bottom: -28px;
+  content: "";
+  border-radius: 2px;
+  background-color: #2196F3;
 }

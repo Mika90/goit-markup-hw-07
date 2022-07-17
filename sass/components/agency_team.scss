@@ -1,61 +1,29 @@
 .our-team {
-  background-color: #F5F4FA;
+  background-color: $color-light-background;
 
-  &__social-icon {
-    width: 20px;
-    height: 20px;
-    fill: #AFB1B8;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: fill;
+  &__box {
+    @extend %container;
+    @extend %section-padding-bottom;
+    @extend %section-padding-top;
   }
 
-  &__social-icon-box {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: background-color;
-
-    &:hover, &:focus {
-      background-color: #2196F3;
-      cursor: pointer;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      transition-property: background-color;
-    }
-  }
-
-  &__social-icon-box:hover > &__social-icon, &__social-icon-box:focus > &__social-icon {
-    fill: white;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: fill;
-  }
-
-  &__social-container {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 30px;
+  &__list {
+    @extend %flexbox-spaces;
   }
 
   &__person-name {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.17;
+    font-size: $font-default;
+    font-weight: $font-weight-bigger;
+    line-height: $line-height-big;
     margin-bottom: 10px;
   }
 
   &__person-function {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.17;
+    font-size: $font-default;
+    font-weight: $font-weight-default;
+    line-height: $line-height-big;
     margin-bottom: 16px;
-    color: #757575;
+    color: $color-light-text;
   }
 
   &__image {
@@ -63,9 +31,9 @@
   }
 
   &__element {
-    background-color: white;
     text-align: center;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0 0 4px 4px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
   }
 }

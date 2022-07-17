@@ -1,15 +1,23 @@
 .specialisation {
+  @extend %container;
+  @extend %section-padding-top;
+  @extend %section-padding-bottom;
+
+  &__list {
+    @extend %flexbox-spaces;
+  }
+
   &__description {
-    color: #FFF;
-    font-size: 14px;
-    background-color: rgba(47, 48, 58, 0.8);
-    width: 100%;
+    font-size: $font-smaller;
     position: absolute;
-    bottom: 0;
     z-index: 100;
+    bottom: 0;
     left: 0;
-    text-align: center;
+    width: 100%;
     padding: 27px 0;
+    text-align: center;
+    color: white;
+    background-color: rgba(47, 48, 58, 0.8);
   }
 
   &__element {

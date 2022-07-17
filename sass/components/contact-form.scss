@@ -1,29 +1,30 @@
 .contact-form {
-  padding-left: 40px;
   padding-right: 40px;
+  padding-left: 40px;
 
   &__data {
-    color: #757575;
     font-size: 12px;
     display: block;
+    color: $color-light-text;
   }
 
   &__icon {
-    width: 12px;
-    height: 12px;
-    fill: #212121;
+    $icon-size: 12px;
     position: absolute;
-    left: 14px;
     top: 14px;
+    left: 14px;
+    width: $icon-size;
+    height: $icon-size;
+    fill: #212121;
   }
 
-  &__data_window {
+  &__data-window {
+    @extend %round-corner;
     width: 100%;
     height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
     margin-bottom: 10px;
     padding-left: 42px;
+    border: getBorder(rgba(33, 33, 33, 0.2));
   }
 
   &__element {
@@ -31,16 +32,16 @@
   }
 
   &__checkbox {
+    @extend %round-corner;
     width: 16px;
     height: 15px;
     margin-left: 15px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
   }
 
   &__privacy {
     font-size: 14px;
-    color: #757575;
+    color: $color-light-text;
   }
 
   &__privacy-link {
@@ -48,26 +49,26 @@
   }
 
   &__button {
+    @extend %round-corner;
     width: 200px;
     height: 50px;
-    background: #2196F3;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    color: rgba(255, 255, 255, 1);
+    color: white;
     border-color: transparent;
+    background: $color-active;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   }
 
   &__button-box {
-    text-align: center;
     margin-top: 30px;
+    text-align: center;
   }
 }
 
-.contact-form__data_window.contact-form__comment {
-  padding-left: 16px;
-  padding-top: 12px;
-  height: 120px;
+.contact-form__data-window.contact-form__comment {
   width: 100%;
-  resize: none;
+  height: 120px;
   margin-bottom: 25px;
+  padding-top: 12px;
+  padding-left: 16px;
+  resize: none;
 }

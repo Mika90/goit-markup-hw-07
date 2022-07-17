@@ -1,20 +1,25 @@
 .page-title {
-  height: 600px;
+  @extend %flexbox-column;
+  @extend %dark-section;
   max-width: 1600px;
-  background-image: url("./../images/Img Overlay.png"), url("./../images/tełko.jpg");
+  height: 600px;
   margin: 0 auto;
+  background-image: url("./../images/Img Overlay.png"), url("./../images/tełko.jpg");
 
-  &__order-buton {
-    background-color: #2196F3;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
+  &__container {
+    @extend %container;
+    @extend %flexbox-column;
+  }
+
+  &__order-button {
+    @extend %button-active;
+    @extend %round-corner;
+    font-size: $font-default;
     padding: 10px 41px 10px 42px;
-    border-radius: 4px;
   }
 
   &__title {
-    text-align: center;
     font-size: 44px;
+    text-align: center;
   }
 }

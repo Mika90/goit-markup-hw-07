@@ -1,30 +1,33 @@
 .our-clients {
+  $clients-color: #AFB1B8;
+
+  @extend %container;
+  @extend %section-padding-top;
+  @extend %section-padding-bottom;
+
   &__container {
-    display: flex;
+    @extend %flexbox-spaces;
     align-items: center;
-    justify-content: space-between;
   }
 
   &__logo-box {
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    width: 170px;
-    height: 92px;
+    @extend %flexbox-center;
+    @extend %animated;
+    @extend %round-corner;
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    fill: #AFB1B8;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    width: 170px;
+    height: 92px;
     transition-property: border-color, fill;
+    border: getBorder($clients-color);
+    fill: $clients-color;
 
     &:hover, &:focus {
-      border-color: #2196F3;
-      fill: #2196F3;
+      @extend %animated;
       cursor: pointer;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       transition-property: border-color, fill;
+      border-color: $color-active;
+      fill: $color-active;
     }
   }
 }

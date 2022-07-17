@@ -1,31 +1,64 @@
-%flexbox-center {
-  display: flex;
-  justify-content: center;
+%inline-block {
+  display: inline-block;
 }
+
 %container {
   width: 1200px;
   margin: 0 auto;
 }
 
+%section-padding-top {
+  padding-top: $section-padding;
+}
+
+%section-padding-bottom {
+  padding-bottom: $section-padding;
+}
+
+%flexbox-center {
+  display: flex;
+  justify-content: center;
+}
+
+%flexbox-spaces {
+  display: flex;
+  justify-content: space-between;
+}
+
+%flexbox-column {
+  @extend %flexbox-center;
+  align-items: center;
+  flex-direction: column;
+}
+
 %button-active {
-  background-color: #2196F3;
-  color: white;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %animated;
+  cursor: pointer;
   transition-property: color, background-color;
+  color: white;
+  background-color: $color-active;
 }
 
 %button {
-  background-color: #F5F4FA;
-  color: black;
+  @extend %animated;
+  @extend %round-corner;
+  font-size: $font-default;
   cursor: pointer;
-  font-size: 16px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color, background-color;
+  color: black;
+  background-color: $color-light-background;
 }
 
-%inline-block {
-  display: inline-block;
+%dark-section {
+  color: white;
+  background-color: $color-dark-background;
 }
 
+%animated {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+%round-corner {
+  border-radius: 4px;
+}

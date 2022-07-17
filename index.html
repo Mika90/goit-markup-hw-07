@@ -15,7 +15,7 @@
 
 <body>
 <header class="header">
-  <div class="header__container container">
+  <div class="header__container">
     <a class="header__logo" href="index.html"><span class="header__logo-start">Web</span>Studio</a>
     <nav>
       <ul>
@@ -31,12 +31,12 @@
       </ul>
     </nav>
     <div>
-      <a class="header__link header__navigation-element header__link--address" href="mailto:info@devstudio.com">
+      <a class="header__link header__link--address header__link--email" href="mailto:info@devstudio.com">
         <svg height="12" width="16">
           <use href="images/icons.svg#mail"></use>
         </svg>
         info@devstudio.com</a>
-      <a class="header__link header__navigation-element header__link--address header__link--phone" href="tel:+48111111111">
+      <a class="header__link header__link--address header__link--phone" href="tel:+48111111111">
         <svg height="16" width="10">
           <use href="images/icons.svg#telefon"></use>
         </svg>
@@ -45,20 +45,20 @@
   </div>
 </header>
 <main>
-  <section class="page-title flexbox-header background">
-    <div class="container flexbox-header">
+  <section class="page-title">
+    <div class="page-title__container">
       <h1 class="page-title__title">EFEKTYWNE ROZWIĄZANIA
         <br>
         DLA WASZEGO BIZNESU
       </h1>
-      <button class="page-title__order-buton" data-modal-open type="button">Zamów usługę</button>
+      <button class="page-title__order-button" data-modal-open type="button">Zamów usługę</button>
     </div>
   </section>
 
   <section>
-    <div class="lorem-ipsum container section-padding-top">
-      <ul class="flexbox-spaces">
-        <li class="lorem-ipsum__element inline-block">
+    <div class="lorem-ipsum">
+      <ul class="lorem-ipsum__list">
+        <li class="lorem-ipsum__element">
           <div class="lorem-ipsum__image-box">
             <svg class="lorem-ipsum__icon">
               <use href="images/icons.svg#antena">
@@ -70,7 +70,7 @@
 adipiscing elit. Nam vel arcu sem. Sed
 non sodales dui. Interdum et malesuada</span>
         </li>
-        <li class="lorem-ipsum__element inline-block">
+        <li class="lorem-ipsum__element">
           <div class="lorem-ipsum__image-box">
             <svg class="lorem-ipsum__icon">
               <use
@@ -83,7 +83,7 @@ non sodales dui. Interdum et malesuada</span>
 adipiscing elit. Nam vel arcu sem. Sed
 non sodales dui. Interdum et malesuada</span>
         </li>
-        <li class="lorem-ipsum__element inline-block">
+        <li class="lorem-ipsum__element">
           <div class="lorem-ipsum__image-box">
             <svg class="lorem-ipsum__icon">
               <use
@@ -96,7 +96,7 @@ non sodales dui. Interdum et malesuada</span>
 adipiscing elit. Nam vel arcu sem. Sed
 non sodales dui. Interdum et malesuada</span>
         </li>
-        <li class="lorem-ipsum__element inline-block">
+        <li class="lorem-ipsum__element">
           <div class="lorem-ipsum__image-box">
             <svg class="lorem-ipsum__icon">
               <use
@@ -114,9 +114,9 @@ non sodales dui. Interdum et malesuada</span>
   </section>
 
   <section>
-    <div class="specialisation container section-padding-top section-padding-bottom">
+    <div class="specialisation">
       <h2>Czym się zajmujemy</h2>
-      <ul class="flexbox-spaces">
+      <ul class="specialisation__list">
         <li class="specialisation__element">
           <img alt="Laptop na fioletowym tle" height="294" src="images/laptop.jpg"
                width="370" />
@@ -136,35 +136,35 @@ non sodales dui. Interdum et malesuada</span>
   </section>
 
   <section class="our-team">
-    <div class="container section-padding-bottom section-padding-top">
+    <div class="our-team__box">
       <h2>Nasz zespół</h2>
-      <ul class="flexbox-spaces">
+      <ul class="our-team__list">
         <li class="our-team__element">
           <img class="our-team__image" alt="Product Designer" height="260" src="images/John Doe.jpg"
                width="270" />
           <div class="our-team__person-name">John Doe</div>
           <div class="our-team__person-function">Product Designer</div>
-          <div class="our-team__social-container">
-            <div class="our-team__social-icon-box">
-              <svg class="our-team__social-icon">
+          <div class="social">
+            <div class="social__icon-box">
+              <svg class="social__icon">
                 <use href="images/icons.svg#instagram">
                 </use>
               </svg>
             </div>
-            <div class="our-team__social-icon-box">
-              <svg class="our-team__social-icon">
+            <div class="social__icon-box">
+              <svg class="social__icon">
                 <use href="images/icons.svg#twitter">
                 </use>
               </svg>
             </div>
-            <div class="our-team__social-icon-box">
-              <svg class="our-team__social-icon">
+            <div class="social__icon-box">
+              <svg class="social__icon">
                 <use href="images/icons.svg#facebook">
                 </use>
               </svg>
             </div>
-            <div class="our-team__social-icon-box">
-              <svg class="our-team__social-icon">
+            <div class="social__icon-box">
+              <svg class="social__icon">
                 <use href="images/icons.svg#linkedin">
                 </use>
               </svg>
@@ -176,27 +176,27 @@ non sodales dui. Interdum et malesuada</span>
                width="270" />
           <div class="our-team__person-name">John Doe</div>
           <div class="our-team__person-function">Fronted Developer</div>
-          <div class="our-team__social-container">
-            <div class="our-team__social-icon-box">
-              <svg class="our-team__social-icon">
+          <div class="social">
+            <div class="social__icon-box">
+              <svg class="social__icon">
                 <use href="images/icons.svg#instagram">
                 </use>
               </svg>
             </div>
-            <div class="our-team__social-icon-box">
-              <svg class="our-team__social-icon">
+            <div class="social__icon-box">
+              <svg class="social__icon">
                 <use href="images/icons.svg#twitter">
                 </use>
               </svg>
             </div>
-            <div class="our-team__social-icon-box">
-              <svg class="our-team__social-icon">
+            <div class="social__icon-box">
+              <svg class="social__icon">
                 <use href="images/icons.svg#facebook">
                 </use>
               </svg>
             </div>
-            <div class="our-team__social-icon-box">
-              <svg class="our-team__social-icon">
+            <div class="social__icon-box">
+              <svg class="social__icon">
                 <use href="images/icons.svg#linkedin">
                 </use>
               </svg>
@@ -207,27 +207,27 @@ non sodales dui. Interdum et malesuada</span>
           <img class="our-team__image" alt="Marketing" height="260" src="images/marketing.jpg" width="270" />
           <div class="our-team__person-name">John Doe</div>
           <div class="our-team__person-function">Marketing</div>
-          <div class="our-team__social-container">
-            <div class="our-team__social-icon-box">
-              <svg class="our-team__social-icon">
+          <div class="social">
+            <div class="social__icon-box">
+              <svg class="social__icon">
                 <use href="images/icons.svg#instagram">
                 </use>
               </svg>
             </div>
-            <div class="our-team__social-icon-box">
-              <svg class="our-team__social-icon">
+            <div class="social__icon-box">
+              <svg class="social__icon">
                 <use href="images/icons.svg#twitter">
                 </use>
               </svg>
             </div>
-            <div class="our-team__social-icon-box">
-              <svg class="our-team__social-icon">
+            <div class="social__icon-box">
+              <svg class="social__icon">
                 <use href="images/icons.svg#facebook">
                 </use>
               </svg>
             </div>
-            <div class="our-team__social-icon-box">
-              <svg class="our-team__social-icon">
+            <div class="social__icon-box">
+              <svg class="social__icon">
                 <use href="images/icons.svg#linkedin">
                 </use>
               </svg>
@@ -238,40 +238,39 @@ non sodales dui. Interdum et malesuada</span>
           <img class="our-team__image" alt="Ul Designer" height="260" src="images/designer.jpg" width="270" />
           <div class="our-team__person-name">John Doe</div>
           <div class="our-team__person-function">UI designer</div>
-          <div class="our-team__social-container">
-            <div class="our-team__social-icon-box">
-              <svg class="our-team__social-icon">
+          <div class="social">
+            <div class="social__icon-box">
+              <svg class="social__icon">
                 <use href="images/icons.svg#instagram">
                 </use>
               </svg>
             </div>
-            <div class="our-team__social-icon-box">
-              <svg class="our-team__social-icon">
+            <div class="social__icon-box">
+              <svg class="social__icon">
                 <use href="images/icons.svg#twitter">
                 </use>
               </svg>
             </div>
-            <div class="our-team__social-icon-box">
-              <svg class="our-team__social-icon">
+            <div class="social__icon-box">
+              <svg class="social__icon">
                 <use href="images/icons.svg#facebook">
                 </use>
               </svg>
             </div>
-            <div class="our-team__social-icon-box">
-              <svg class="our-team__social-icon">
+            <div class="social__icon-box">
+              <svg class="social__icon">
                 <use href="images/icons.svg#linkedin">
                 </use>
               </svg>
             </div>
           </div>
-
         </li>
       </ul>
     </div>
   </section>
 
   <section>
-    <div class="our-clients container section-padding-top section-padding-bottom">
+    <div class="our-clients">
       <h2>Nasi klienci</h2>
       <ul class="our-clients__container">
         <li class="our-clients__logo-box">
@@ -315,41 +314,41 @@ non sodales dui. Interdum et malesuada</span>
   </section>
 </main>
 
-<footer class="background">
-  <div class="footer container">
+<footer class="footer">
+  <div class="footer__container">
     <div class="footer__info">
-      <a class="header__logo footer__logo" href="/"><span class="header__logo-start">Web</span>Studio</a>
+      <a class="footer__logo" href="/"><span class="footer__logo-start">Web</span>Studio</a>
       <address class="footer__address">m.Warszawa, Aleje Jerozolimskie 21</address>
-      <address class="footer-address-contact">
-        <a class="header__link" href="mailto:info@example.com">info@example.com</a>
+      <address class="footer__address-contact">
+        <a class="footer__link" href="mailto:info@example.com">info@example.com</a>
       </address>
-      <address class="footer-address-contact">
-        <a class="header__link" href="tel:+48 111 111 111">+48 111 111 111</a>
+      <address class="footer__address-contact">
+        <a class="footer__link" href="tel:+48 111 111 111">+48 111 111 111</a>
       </address>
     </div>
     <div class="footer__social-box">
-      <span class="newsletter-form__social-title">DOŁĄCZ DO NAS</span>
-      <div class="our-team__social-container">
-        <div class="our-team__social-icon-box">
-          <svg class="our-team__social-icon">
+      <span class="footer__section-title">DOŁĄCZ DO NAS</span>
+      <div class="social">
+        <div class="social__icon-box">
+          <svg class="social__icon">
             <use href="images/icons.svg#instagram">
             </use>
           </svg>
         </div>
-        <div class="our-team__social-icon-box">
-          <svg class="our-team__social-icon">
+        <div class="social__icon-box">
+          <svg class="social__icon">
             <use href="images/icons.svg#twitter">
             </use>
           </svg>
         </div>
-        <div class="our-team__social-icon-box">
-          <svg class="our-team__social-icon">
+        <div class="social__icon-box">
+          <svg class="social__icon">
             <use href="images/icons.svg#facebook">
             </use>
           </svg>
         </div>
-        <div class="our-team__social-icon-box">
-          <svg class="our-team__social-icon">
+        <div class="social__icon-box">
+          <svg class="social__icon">
             <use href="images/icons.svg#linkedin">
             </use>
           </svg>
@@ -359,7 +358,7 @@ non sodales dui. Interdum et malesuada</span>
     <div class="footer__newsletter-box">
       <form class="newsletter-form">
         <label>
-          <span class="newsletter-form__social-title newsletter-form__email-label">ZAPISZ SIĘ DO NEWSLETTERA</span>
+          <span class="newsletter-form__email-label">ZAPISZ SIĘ DO NEWSLETTERA</span>
           <input class="newsletter-form__email-input" type="text" name="email" placeholder="E-mail" />
         </label>
         <button class="newsletter-form__button" type="submit">Zapisz się
@@ -385,7 +384,7 @@ non sodales dui. Interdum et malesuada</span>
         <span class="contact-form__data">Imię</span>
       </label>
       <div class="contact-form__element">
-        <input id="form-name" class="contact-form__data_window" type="text" name="name" />
+        <input id="form-name" class="contact-form__data-window" type="text" name="name" />
         <svg class="contact-form__icon">
           <use href="images/icons.svg#ludzik">
           </use>
@@ -396,7 +395,7 @@ non sodales dui. Interdum et malesuada</span>
         <span class="contact-form__data">Telefon</span>
       </label>
       <div class="contact-form__element">
-        <input id="form-phone" class="contact-form__data_window" type="tel" name="phone" />
+        <input id="form-phone" class="contact-form__data-window" type="tel" name="phone" />
         <svg class="contact-form__icon">
           <use href="images/icons.svg#telefonik">
           </use>
@@ -407,7 +406,7 @@ non sodales dui. Interdum et malesuada</span>
         <span class="contact-form__data">Email</span>
       </label>
       <div class="contact-form__element">
-        <input id="form-email" class="contact-form__data_window" type="email" name="email" />
+        <input id="form-email" class="contact-form__data-window" type="email" name="email" />
         <svg class="contact-form__icon" style="width: 16px; height: 12px">
           <use href="images/icons.svg#kopertuszka">
           </use>
@@ -416,7 +415,7 @@ non sodales dui. Interdum et malesuada</span>
 
       <label>
         <span class="contact-form__data">Komentarz</span>
-        <textarea class="contact-form__data_window contact-form__comment" name="comment" placeholder="Wprowadź tekst"></textarea>
+        <textarea class="contact-form__data-window contact-form__comment" name="comment" placeholder="Wprowadź tekst"></textarea>
       </label>
       <div>
         <input id="checkbox" type="checkbox" class="contact-form__checkbox" name="checkbox">
